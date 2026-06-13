@@ -1,6 +1,6 @@
 # Transformer-from-Scratch
 
-This project implements the Transformer architecture from *"Attention Is All You Need"*, and builds a complete training and inference pipeline.
+This project implements the Transformer architecture from *"Attention Is All You Need"* and builds a training and inference pipeline for Neural Machine Translation.
 
 ## What I implemented
 
@@ -14,7 +14,7 @@ This project implements the Transformer architecture from *"Attention Is All You
 
 ### Training Pipeline
 - Multi30k English-German Translation Dataset
-- Joint BPE Tokenization
+- Joint BPE Tokenization(Dependency on Hugging Face)
 - Teacher Forcing Training
 - Autoregressive Inference
 
@@ -39,7 +39,7 @@ A trendy girl talking on her cellphone while gliding slowly down the street.
 
 Output sequence:
 ```bash
-Ein schickes Mädchen spricht mit dem Handy während sie langsam die Straße.
+Ein schickes Mädchen spricht mit dem Handy während sie langsam die Straße entlangschwiese Person.
 ```
 
 ### Train Loss Curve
