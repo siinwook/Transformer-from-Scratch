@@ -1,12 +1,12 @@
 # Transformer-from-Scratch
 
-This project reproduces the structure of Transformer, *"Attention is all you need"*, and operates simple train / inference.
+This project reproduces the structure of Transformer, *"Attention is all you need"*, and operates simple train & inference.
 
 ## What I implemented
 
 - Positional Encoding
 - Multi-Head Attention
-- Encoder&Decoder
+- Encoder & Decoder
 - Transformer
 - Multi30k training pipeline joint Byte-Pair Encoding
 - English to German Neural Machine Translation inference
