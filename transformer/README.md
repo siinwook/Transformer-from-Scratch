@@ -22,11 +22,20 @@ In this view, high frequency clock (low i) represents local position and low fre
 
 ### 2. Multi-Head Attention
 
-Q,K,V projection...
+- Attention(Q,K,V) = softmax(QKT / √dk)V
+- MultiHead(Q,K,V) = Concat(head1, ..., headh) where headi = Attention(Q,K,V)
 
-Shape:
-(batch, seq_len, d_model)
-→
-(batch, heads, seq_len, d_k)
+Tensor Shape:
+| Operation | Before | After |
+|---|---|---|
+| Input | (batch, seq_len, d_model) | (batch, seq_len, d_model) |
+| Q projection | (batch, seq_len, d_model) | (batch, head, seq_len, d_k) |
+| K projection | (batch, seq_len, d_model) | (batch, head, seq_len, d_k) |
+| V projection | (batch, seq_len, d_model) | (batch, head, seq_len, d_v) |
+| Q @ K.T | (batch, head, seq_len, d_k) | (batch, head, seq_len, seq_len) |
+| softmax(QKT / √dk)V | (batch, head, seq_len, seq_len) | (batch, head, seq_len, d_v) |
+| Concatenate | (batch, head, seq_len, d_v) | (batch, seq_len, d_model) |
 
-...
+Multi
+
+
