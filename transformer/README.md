@@ -17,7 +17,7 @@ Let θ = pos/10000^(2i/dmodel), it is acceptable to understand as (sin(θ), cos(
 
 ![positional_encoding_intuition](./positional_encoding_intuition.png)
 
-In this view, high frequency clock (low i) represents local position and low frequency clock (high i) represents global position in sequence.
+In this intuition, high frequency clock (low i) represents local position and low frequency clock (high i) represents global position in sequence.
 
 
 ### 2. Multi-Head Attention
