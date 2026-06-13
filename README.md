@@ -14,7 +14,7 @@ This project implements the Transformer architecture from *"Attention Is All You
 
 ### Training Pipeline
 - Multi30k English-German Translation Dataset
-- Joint BPE Tokenization(Dependency on Hugging Face)
+- Joint BPE Tokenization (Dependency on Hugging Face)
 - Teacher Forcing Training
 - Autoregressive Inference
 
