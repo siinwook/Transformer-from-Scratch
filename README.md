@@ -33,12 +33,12 @@ This project implements the Transformer architecture from *"Attention Is All You
 ### English to German Translation
 
 Input sequence:
-```bash
+```
 A trendy girl talking on her cellphone while gliding slowly down the street.
 ```
 
 Output sequence:
-```bash
+```
 Ein schickes Mädchen spricht mit dem Handy während sie langsam die Straße entlangschwiese Person.
 ```
 
