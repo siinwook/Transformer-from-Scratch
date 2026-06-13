@@ -2,11 +2,6 @@
 
 This project implements the Transformer architecture from *"Attention Is All You Need"*, and builds a complete training and inference pipeline.
 
-## Overview
-
-The goal of this project is to understand the internal structure of Transformer
-by implementing its core components and applying it to Neural Machine Translation.
-
 ## What I implemented
 
 ### Transformer Architecture
