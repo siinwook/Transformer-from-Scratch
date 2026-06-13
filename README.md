@@ -12,11 +12,11 @@ This project reproduces the structure of Transformer, *"Attention is all you nee
 - English to German Neural Machine Translation inference
 - Train loss curve
 
-## Key Result
+## Key Idea
 
-- Residual architectures address *the degradation problem* and make deeper neural networks easier to optimize.
-- Comparing shallow models, ResNet gains much accuracy and converges faster than PlainNet.
-- Comparing deeper models, PlainNet accuracy saturated while ResNet benefits the deep layer
+- Transformer is based on solely attention mechanism, unlike recurrent or convolutional models.
+- Embedded tokens are added with positional encoding which represents the position of tokens in sequence.
+- Multi head attention allows the model to learn different representations simultaneously.
 
 ## Experiments
 
