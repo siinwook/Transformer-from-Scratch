@@ -1,23 +1,55 @@
 # Transformer-from-Scratch
 
-This project reproduces the structure of Transformer, *"Attention is all you need"*, and operates simple train & inference.
+This project implements the Transformer architecture from *"Attention Is All You Need"*, and builds a complete training and inference pipeline.
+
+## Overview
+
+The goal of this project is to understand the internal structure of Transformer
+by implementing its core components and applying it to Neural Machine Translation.
 
 ## What I implemented
 
-- Positional Encoding
+### Transformer Architecture
+- Sinusoidal Positional Encoding
+- Scaled Dot-Product Attention
 - Multi-Head Attention
-- Encoder & Decoder
-- Transformer
-- Multi30k training pipeline joint Byte-Pair Encoding
-- English to German Neural Machine Translation inference
-- Train loss curve
+- Encoder Block
+- Decoder Block
+- Transformer Model
+
+### Training Pipeline
+- Multi30k English-German Translation Dataset
+- Joint BPE Tokenization
+- Teacher Forcing Training
+- Autoregressive Inference
+
+### Experiment
+- Translation inference examples
+- Training loss visualization
 
 ## Key Idea
 
-- Transformer is based on solely attention mechanism unlike recurrent or convolutional models.
-- Embedded tokens are added with positional encoding which represents the position of tokens in sequence.
-- Multi head attention allows the model to learn different representations simultaneously.
+- Transformer removes recurrence and convolution, relying entirely on attention mechanisms.
+- Positional Encoding provides sequence order information.
+- Multi-head attention allows the model to capture different representation subspaces.
+
+## Results
+
+### English to German Translation
+
+Input sequence:
+```bash
+A trendy girl talking on her cellphone while gliding slowly down the street.
+```
+
+Output sequence:
+```bash
+Ein schickes Mädchen spricht mit dem Handy während sie langsam die Straße.
+```
+
+### Train Loss Curve
+![transformer_train_loss](./transformer_train_loss.png)
 
 ## Tech Stack
 
-PyTorch, Hugging Face, Cuda, Matplotlib, Jupyter Notebook
+PyTorch, Hugging Face Tokenizers, CUDA, Matplotlib, Jupyter Notebook
