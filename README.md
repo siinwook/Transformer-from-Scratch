@@ -47,4 +47,4 @@ Ein schickes Mädchen spricht mit dem Handy während sie langsam die Straße ent
 
 ## Tech Stack
 
-PyTorch, Hugging Face Tokenizers, CUDA, Matplotlib, Jupyter Notebook
+PyTorch, Hugging Face, CUDA, Matplotlib, Jupyter Notebook
